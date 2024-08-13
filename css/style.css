@@ -256,11 +256,6 @@ footer {
         "main" 1fr
         "footer" 150px/
         100%;
-        "header" 300px
-        "sidebar" 190px
-        "main" 1fr
-        "footer" 150px/
-        100%;
 }
 .form-check-input:checked {
     background-color: #b91111;
