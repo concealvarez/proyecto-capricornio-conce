@@ -1,0 +1,42 @@
+//variables: $llave:valor
+//colores
+$background-color: #f4f5ef;
+$button-color: #ef1f1fdd;
+$border-button-color: #ef1f1f72;
+$buscador-color: #ffffff73;
+$text-color: #ffffff;
+$check-box: #b91111;
+$check-box-border: #b91111;
+$ancla: #000000;
+//width
+$max-width: (
+    width-max: 100%
+);
+@each $largo, $maximo in ($max-width){
+    .width-max-#{$largo}{
+        width: $maximo;
+    }
+}
+$max-width: 100%;
+//font size
+$font-size1: 12px;
+$font-size2: 13px;
+$font-size3: 14px;
+$font-size4: 15px;
+$font-size5: 16px;
+$font-size6: 17px;
+//display
+$display: (
+    d-flex: flex,
+    d-grid: grid,
+);
+
+@each $disposicion, $mood in ($display) {
+    .display-#{$disposicion} {
+        display: $mood;
+    }
+
+}
+//media q
+$media-q-small: 600px;
+$media-q-med: 980px;

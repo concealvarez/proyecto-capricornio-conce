@@ -1,0 +1,75 @@
+//mq
+@mixin tablet{
+    @media screen and (min-width:$media-q-small) {
+       @content; 
+    }
+}
+@mixin desktop{
+    @media screen and (min-width:$media-q-med) {
+       @content; 
+    }
+}
+
+//sin parametros 
+@mixin ancla-diseño{
+    text-decoration: none;
+    color: $ancla;
+    text-transform: uppercase;
+}
+@mixin cabecera {
+    header {
+        grid-area: header;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color:$background-color;
+        .logo {
+            width: 150px;
+            margin-bottom: 50px;
+            img {
+                width: $max-width;
+            }
+        }
+        nav {
+            width: $max-width;
+            height: 100px;
+            flex-direction: column-reverse;
+            .categorias-contenedor {
+                width: $max-width;
+                justify-content: space-around;
+                align-self: flex-end;
+                margin-bottom: 30px;
+                .categorias a {
+                    @include ancla-diseño
+                }
+            }
+            .buscador {
+                height: 30px;
+                justify-content: end;
+                margin-bottom: 40px;
+                margin-right: 20px;
+                button {
+                    background-color: $button-color;
+                    color: $text-color;
+                    border-color: $border-button-color;
+                    border-radius: 10px;
+                    font-size: $font-size1;
+                    height: 23px;
+                }
+                input {
+                    @include width-heigth (125px, 23px);
+                    font-size: $font-size2;
+                    text-align: center;
+                    border-radius: 10px;
+                    border-color: $buscador-color;
+                }
+            }
+            
+        }
+    }
+
+}
+//con parametros
+@mixin width-heigth ($w, $h){
+    width: $w;
+    height: $h;
+}

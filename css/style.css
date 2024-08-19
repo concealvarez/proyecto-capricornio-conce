@@ -18,8 +18,8 @@ body {
 }
 header {
     grid-area: header;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     Background-color: rgb(244, 245, 239);
 }
@@ -49,7 +49,6 @@ nav {
 .buscador button {
     background-color: rgba(239, 31, 31, 0.866);
     color: white;
-    font-size: 15px;
     border-color: #ef1f1f72;
     border-radius: 10px;
     font-size: 12px;
@@ -57,7 +56,6 @@ nav {
 }
 .buscador input {
     font-size: 13px;
-    text-align: center;
     text-align: center;
     width: 125px;
     height: 23px;
@@ -86,7 +84,7 @@ nav {
     width: 150px;
     height: 35px;
     background-color: #ff0000;
-    color: white;
+    color: #ffffff;
     border-radius: 10px;
     border-style: hidden;
 }
@@ -143,7 +141,6 @@ footer {
     height: 100%;
 }
 .ubic i {
-    padding: 25px 0px;
     padding: 25px 0px;
     text-align: center;
     align-content: center;
@@ -318,7 +315,6 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 120px;
     width: 120px;
     height: auto;
 }

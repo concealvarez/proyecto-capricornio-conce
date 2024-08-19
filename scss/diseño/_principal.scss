@@ -1,0 +1,77 @@
+/*main index*/
+main {
+    grid-area: main;
+    background-color: $background-color;
+    .ofertas {
+        width: $max-width;
+        background-image: url(../images/17b248fa1a70f1ea09788803466a0ebf.jpg);
+        button {
+            @include width-heigth (150px, 35px);
+            margin: 80px;
+            background-color: $button-color;
+            color: $text-color;
+            border-radius: 10px;
+            border-style: hidden;
+        }
+    }
+    .title-primary {
+        padding: 50px 0px;
+        font-size: 35px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .productos-contenedor {
+        width: 100%;
+        grid-template-rows: repeat(4, auto);
+        gap: 20px 0px;
+        justify-content: center;
+        .producto a {
+            @include ancla-diseño;
+            .producto-img {
+                @include width-heigth (270px, 320px);
+                    &:hover {
+                    zoom: 120%;
+                }
+                img {
+                    width: $max-width;
+                }
+                h3 {
+                    font-weight: 100;
+                    text-align: center;
+                    position: relative;
+                    line-height: 10px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+/*main products*/
+.main-producto {
+    justify-content: space-around;
+    .conteiner-grid {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+        justify-content: space-around;
+        .products {
+            flex-wrap: wrap;
+            justify-content: center;
+            @include width-heigth (120px, auto);
+            &:hover{
+                zoom: 120%;
+            }
+            .contenedor-product{
+                text-decoration: none;
+                h3{
+                    font-size: 15px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+            }
+
+        }
+    }
+}
