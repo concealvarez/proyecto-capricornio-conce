@@ -181,6 +181,7 @@ main .productos-contenedor .producto a .producto-img h3 {
   border-color: rgba(239, 31, 31, 0.8666666667);
 }
 
+/*sidebar ofertas*/
 /*footer index*/
 footer {
   grid-area: footer;
@@ -307,6 +308,10 @@ footer .ubic i {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
+}
+/*ofertas-page*/
+.grid-container-oferta {
+  grid-template: "header" 300px "sidebar" 80px "main" 1fr "footer" 50px/100%;
 }
 
 /*# sourceMappingURL=main.css.map */
