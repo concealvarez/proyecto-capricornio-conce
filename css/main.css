@@ -58,6 +58,8 @@ header nav .buscador button {
   border-color: rgba(239, 31, 31, 0.4470588235);
   border-radius: 10px;
   font-size: 12px;
+  text-transform: capitalize;
+  width: 40px;
   height: 23px;
 }
 header nav .buscador input {
@@ -127,29 +129,32 @@ main .productos-contenedor .producto a .producto-img h3 {
   justify-content: space-around;
 }
 .main-producto .conteiner-grid {
+  margin-top: 20px;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 80px;
   justify-items: center;
   justify-content: space-around;
 }
 .main-producto .conteiner-grid .products {
   flex-wrap: wrap;
   justify-content: center;
-  width: 120px;
+  width: 140px;
   height: auto;
 }
 .main-producto .conteiner-grid .products:hover {
   zoom: 120%;
+  box-shadow: 0px 5px 3px rgba(128, 128, 128, 0.2078431373);
 }
 .main-producto .conteiner-grid .products .contenedor-product {
   text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
 }
 .main-producto .conteiner-grid .products .contenedor-product h3 {
   font-size: 15px;
   text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+  margin-top: 10px;
 }
 
 .sidebar {
@@ -195,23 +200,29 @@ footer .ubic i {
   text-transform: uppercase;
   font-style: normal;
 }
-footer .contacto {
+
+.contacto {
   margin-top: 25px;
   width: 100%;
   height: 50px;
   justify-content: space-around;
 }
-footer .contacto .contacto-link {
+.contacto .contacto-link {
   margin: 25px 0px;
   width: 90px;
   justify-content: space-around;
   top: 25px;
 }
-footer .contacto .contacto-link a {
+.contacto .contacto-link a {
   font-size: 14px;
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
+}
+
+/*footer productos*/
+.footer-productos {
+  height: 0px;
 }
 
 /*mq index*/
@@ -256,6 +267,46 @@ footer .contacto .contacto-link a {
 .grid-container-prod {
   display: grid;
   grid-template: "header" 300px "sidebar" 50px "main" 1fr "footer" 150px/100%;
+}
+
+@media screen and (min-width: 350px) {
+  .products {
+    width: 150px;
+  }
+  .contenedor-product h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 510px) {
+  .products {
+    width: 160px;
+  }
+  .contenedor-product h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .conteiner-grid {
+    gap: 50px, 0px;
+  }
+  .products {
+    width: 180px;
+  }
+  .contenedor-product h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .grid-container-prod {
+    display: grid;
+    grid-template: "header header header" 1fr "sidebar main main" auto "sidebar main main" auto "footer footer footer" 200px/20% 40% 40%;
+  }
+  .content {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

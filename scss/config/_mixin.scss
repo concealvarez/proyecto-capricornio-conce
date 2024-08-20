@@ -1,11 +1,21 @@
 //mq
-@mixin tablet{
+@mixin mobile {
+    @media screen and (min-width:$media-q-xs) {
+       @content; 
+    }
+}
+@mixin mobile-2 {
     @media screen and (min-width:$media-q-small) {
        @content; 
     }
 }
-@mixin desktop{
+@mixin tablet{
     @media screen and (min-width:$media-q-med) {
+       @content; 
+    }
+}
+@mixin desktop{
+    @media screen and (min-width:$media-q-large) {
        @content; 
     }
 }
@@ -53,7 +63,8 @@
                     border-color: $border-button-color;
                     border-radius: 10px;
                     font-size: $font-size1;
-                    height: 23px;
+                    text-transform:capitalize;
+                    @include width-heigth(40px, 23px )
                 }
                 input {
                     @include width-heigth (125px, 23px);
@@ -67,6 +78,24 @@
         }
     }
 
+}
+@mixin contacto {
+    .contacto{
+        margin-top: 25px;
+        width: $max-width;
+        height: 50px;
+        justify-content: space-around;
+        .contacto-link{
+            margin: 25px 0px;
+            width: 90px;
+            justify-content: space-around;
+            top: 25px;
+            a{
+                font-size: 14px;
+                @include ancla-diseño
+            }
+        }
+    }
 }
 //con parametros
 @mixin width-heigth ($w, $h){

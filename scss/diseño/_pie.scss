@@ -16,25 +16,10 @@ footer{
             font-style: normal;
         }
     }
-    .contacto{
-        margin-top: 25px;
-        width: $max-width;
-        height: 50px;
-        justify-content: space-around;
-        .contacto-link{
-            margin: 25px 0px;
-            width: 90px;
-            justify-content: space-around;
-            top: 25px;
-            a{
-                font-size: 14px;
-                @include ancla-diseño
-            }
-        }
-    }
 }
+@include contacto;
 
-
-
-
-
+/*footer productos*/
+.footer-productos {
+    height: 0px
+}
