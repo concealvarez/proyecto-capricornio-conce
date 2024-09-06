@@ -33,8 +33,10 @@ header {
   background-color: #f4f5ef;
 }
 header .logo {
-  width: 200px;
   margin-bottom: 50px;
+}
+header .logo img {
+  width: 200px;
 }
 header .navbar {
   padding: 0px;
@@ -363,6 +365,9 @@ footer .social-media .text-social {
 footer .social-media .contacto {
   justify-content: space-around;
   background-color: rgb(245, 224, 224);
+}
+footer .social-media .contacto .contacto-link {
+  display: flex;
 }
 footer .social-media .contacto .contacto-link a {
   text-decoration: none;

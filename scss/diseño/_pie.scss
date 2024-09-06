@@ -46,6 +46,7 @@ footer {
             justify-content: space-around;
             background-color: rgb(245, 224, 224);
             .contacto-link {
+                display: flex;
                 a{
                     text-decoration: none;
                     background-color: rgb(245, 224, 224);

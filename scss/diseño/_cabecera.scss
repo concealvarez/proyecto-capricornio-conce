@@ -4,8 +4,10 @@ header {
     flex-direction: column;
     background-color: $background-color;
     .logo {
-        width: 200px;
         margin-bottom: 50px;
+        img{
+            width: 200px;
+        }
     }
     .navbar {
         padding: 0px;
