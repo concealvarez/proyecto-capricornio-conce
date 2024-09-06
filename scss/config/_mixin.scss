@@ -19,18 +19,24 @@
        @content; 
     }
 }
+@mixin desktop-xl {
+    @media screen and (min-width:$media-q-xl) {
+       @content; 
+    }
+}
 
 //sin parametros 
 @mixin ancla-diseño{
     text-decoration: none;
     color: $ancla;
     text-transform: uppercase;
+    text-align: center;
 }
 @mixin cabecera {
     header {
         grid-area: header;
-        justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
         background-color:$background-color;
         .logo {
             width: 150px;
@@ -39,20 +45,22 @@
                 width: $max-width;
             }
         }
-        nav {
-            width: $max-width;
-            height: 100px;
-            flex-direction: column-reverse;
-            .categorias-contenedor {
+        .container-fluid {
+            flex-direction: column;
+            .navbar-toggler-icon{
+                margin-left: 100px;
+            }
+            .navbar-nav {
                 width: $max-width;
                 justify-content: space-around;
                 align-self: flex-end;
                 margin-bottom: 30px;
-                .categorias a {
-                    @include ancla-diseño
+                .nav-link {
+                    @include ancla-diseño;
+                    justify-content:space-around
                 }
             }
-            .buscador {
+            form {
                 height: 30px;
                 justify-content: end;
                 margin-bottom: 40px;
@@ -64,10 +72,11 @@
                     border-radius: 10px;
                     font-size: $font-size1;
                     text-transform:capitalize;
-                    @include width-heigth(40px, 23px )
+                    align-content: center;
+                    @include width-heigth(60px, 30px )
                 }
                 input {
-                    @include width-heigth (125px, 23px);
+                    @include width-heigth (125px, 30px);
                     font-size: $font-size2;
                     text-align: center;
                     border-radius: 10px;
@@ -78,24 +87,6 @@
         }
     }
 
-}
-@mixin contacto {
-    .contacto{
-        margin-top: 25px;
-        width: $max-width;
-        height: 50px;
-        justify-content: space-around;
-        .contacto-link{
-            margin: 25px 0px;
-            width: 90px;
-            justify-content: space-around;
-            top: 25px;
-            a{
-                font-size: 14px;
-                @include ancla-diseño
-            }
-        }
-    }
 }
 //con parametros
 @mixin width-heigth ($w, $h){

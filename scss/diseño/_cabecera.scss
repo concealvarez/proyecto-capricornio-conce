@@ -1,1 +1,77 @@
-@include cabecera
+header {
+    grid-area: header;
+    align-items: center;
+    flex-direction: column;
+    background-color: $background-color;
+    .logo {
+        width: 200px;
+        margin-bottom: 50px;
+    }
+    .navbar {
+        padding: 0px;
+        flex-direction: column;
+        .collapse {
+            z-index: 1;
+            padding-left: 10px;
+            .navbar-nav {
+                justify-content: space-around;
+                align-self: flex-end;
+                .nav-link {
+                    @include ancla-diseño;
+                    justify-content: space-around
+                }
+            }
+            form {
+                height: 30px;
+                justify-content: end;
+                margin-bottom: 40px;
+                margin-right: 20px;
+                .btn {
+                    background-color: $button-color;
+                    color: $text-color;
+                    border-color: $border-button-color;
+                    border-radius: 10px;
+                    font-size: $font-size1;
+                    text-transform: capitalize;
+                    align-content: center;
+                    @include width-heigth(60px, 30px)
+                }
+                input {
+                    font-size: $font-size2;
+                    text-align: center;
+                    border-radius: 10px;
+                    border-color: $buscador-color;
+                }
+            }
+        }
+        .breadcrumb-container {
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+
+            .breadcrumb-tittle {
+                font-size: 30px;
+                text-decoration: underline 2px #808080;
+                padding-top: 50px;
+            }
+        }
+    }
+}
+
+/*ofertas-header*/
+.ofertas-navidad {
+    padding-top: 50px;
+    .img-navidad {
+        border-bottom: 1px groove rgba(128, 128, 128, 0.288);
+        padding-bottom: 30px;
+    }
+    .ofertas-navidad-text{
+        padding-top: 20px;
+        border-top: 1px groove rgba(128, 128, 128, 0.233);
+        color: rgba(160, 0, 0, 0.788);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}

@@ -2,79 +2,152 @@
 main {
     grid-area: main;
     background-color: $background-color;
-    .ofertas {
-        width: $max-width;
-        background-image: url(../images/17b248fa1a70f1ea09788803466a0ebf.jpg);
-        button {
-            @include width-heigth (150px, 35px);
-            margin: 80px;
-            background-color: $button-color;
-            color: $text-color;
-            border-radius: 10px;
-            border-style: hidden;
-        }
-    }
-    .title-primary {
-        padding: 50px 0px;
-        font-size: 35px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .productos-contenedor {
-        width: 100%;
-        grid-template-rows: repeat(4, auto);
-        gap: 20px 0px;
-        justify-content: center;
-        .producto a {
-            @include ancla-diseño;
-            .producto-img {
-                @include width-heigth (270px, 320px);
-                    &:hover {
-                    zoom: 120%;
-                }
-                img {
-                    width: $max-width;
-                }
-                h3 {
-                    font-weight: 100;
-                    text-align: center;
-                    position: relative;
-                    line-height: 10px;
-                    margin: 10px;
-                }
+    padding-bottom: 50px;
+    .banners-informativos {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 40px 0px;
+        .informacion {
+            .bi-bi {
+                font-size: 35px;
             }
         }
     }
 }
+
+.title-primary {
+    padding: 20px 0px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-color: rgba(228, 0, 0, 0.967);
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.productos-contenedor {
+    width: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    gap: 20px 0px;
+    justify-content: space-around;
+    .producto a {
+        @include ancla-diseño;
+        font-size: 10px;
+        .card {
+            @include width-heigth (12rem, 270px);
+            font-size: $font-size2;
+            margin-top: 10px;
+            position: relative;
+            img {
+                width: $max-width;
+            }
+            .card-title {
+                color: #808080;
+                font-size: $font-size4;
+            }
+            .card-text {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
 /*main products*/
 .main-producto {
     justify-content: space-around;
-    .conteiner-grid {
-        margin-top: 20px;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    .conteiner-grid-product {
+        align-items: center;
+        margin-top: 50px;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(2, 180px);
         gap: 80px;
-        justify-items: center;
-        justify-content: space-around;
         .products {
-            flex-wrap: wrap;
             justify-content: center;
-            width: 140px;
-            height: auto;
-            &:hover{
-                zoom: 120%;
-                box-shadow: 0px 5px 3px #80808035;
-            }
-            .contenedor-product{
-                text-decoration: none;
-                color: #000000;
-                text-transform: uppercase;;
-                h3{
-                    font-size: 15px;
-                    text-align: center;
-                    margin-top: 10px;
+            .contenedor-product {
+                @include ancla-diseño;
+                .product-body {
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+                    .selector {
+                        justify-content: space-around;
+                        .measures {
+                            width: 50px;
+                            height: 20px;
+                            font-size: $font-size1;
+                            margin: 12px 5px;
+                        }
+                    }
+                    .description {
+                        padding-top: 10px;
+                        font-size: $font-size1;
+                        color: #808080;
+                    }
+
+                    .price-desc {
+                        text-decoration: line-through;
+                        color: #808080;
+                    }
+
+                    .price {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+                button {
+                    height: 25px;
+                    background-color: $button-color;
+                    border-radius: 5px;
+                    color: #ffffff;
+                    font-size: 13px;
+                    border: none;
                 }
             }
         }
+    }
+    .page-navegation {
+        padding: 10px;
+        justify-content: center;
+        .pagination {
+            .page-item {
+                width: auto;
+            }
+            .page-link {
+                @include ancla-diseño;
+                font-size: $font-size5;
+                text-transform: capitalize;
+
+            }
+        }
+    }
+}
+
+/*ofertas.main*/
+.contenedor-desc {
+    position: relative;
+
+    .desc {
+        font-size: $font-size3;
+        padding: 5px;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border-radius: 50%;
+        top: 5px;
+    }
+}
+.ubic {
+    padding: 60px 0px 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    .bi-geo-alt-fill {
+        padding: 20px;
     }
 }

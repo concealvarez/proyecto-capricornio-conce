@@ -7,109 +7,184 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Capricornio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <title>Capricornio</title>
 </head>
 
 <body>
     <div class="grid-container display-d-grid">
         <header class="display-d-flex">
             <div class="logo">
-                <img class="width-max" src="images/328147780_574667957874133_924385078171525316_n.jpg" alt="" id="logo">
+                <img class="width-max" src="./images/ICONO.jpg" alt="" id="logo">
             </div>
-            <nav class="display-d-flex width-max">
-                <section class="categorias-contenedor width-max display-d-flex">
-                    <div class="categorias">
-                        <a href="./pages/productos.html">productos</a>
+            <nav class="navbar display-d-flex bg-body-tertiary width-max-width-max">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav width-max-width-max me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/ofertas.html">ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                     </div>
-                    <div class="categorias">
-                        <a href="./pages/ofertas.html">ofertas</a>
-                    </div>
-                    <div class="categorias">
-                        <a href="#contacto">contactos</a>
-                    </div>
-                </section>
-                <div class="buscador display-d-flex">
-                    <form action="index.html"></form>
-                    <input type="text" placeholder="Que estas buscando?" name="search"> <!-- buscar  -->
-                    <button type="submit">buscar</button>
                 </div>
             </nav>
         </header>
         <main>
             <section class="ofertas width-max">
-                <button type="submit">VER OFERTAS</button>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/Banner Horizontal Promoción de Rebajas.png" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/Historia de instagram chocolates descuento ilustración marrón.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
             </section>
+            <div class="banners-informativos display-d-flex">
+                <div class="informacion">
+                    <i class="bi-bi bi-truck"></i>
+                    <h3 class="h5 m-0">Envios</h3>
+                    <p class="m-0">a todo el país</p>
+                </div>
+                <div class="informacion">
+                    <i class="bi-bi bi-credit-card"></i>
+                    <h3 class="h5 m-0">Formas de pago</h3>
+                    <p class="m-0">todas las formas de pago</p>
+                </div>
+                <div class="informacion">
+                    <i class="bi-bi bi-percent"></i>
+                    <h3 class="h5 m-0">Promociones</h3>
+                    <p class="m-0">y descuentos</p>
+                </div>
+            </div>
             <h2 class="title-primary">conoce nuestras novedades</h2>
-            <section class="productos-contenedor display-d-grid">
-                <div class="producto display-d-grid">
+            <section class="productos-contenedor width-max-width-max display-d-grid">
+                <div class="producto" data-aos="zoom-in">
                     <a href=>
-                        <div class="producto-img">
-                            <img class="width-max" src="./images/a4cd581ca98ced3f2988697d05313bf1.jpg" alt="molde sabarin">
-                            <h3>molde sabarin</h3>
-                            <h3>$10000</h3>
+                        <div class="card">
+                            <img src="./images/producto1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">molde cupcacke</h5>
+                                <p class="card-text">$10000</p>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="producto">
+                <div class="producto" data-aos="zoom-in">
                     <a href="">
-                        <div class="producto-img">
-                            <img class="width-max" src="./images/34f82572190993a464d384a2be176fde.jpg" alt="molde aluminio cupcacke">
-                            <h3>molde cupcacke</h3>
-                            <h3>$15000</h3>
+                        <div class="card">
+                            <img src="./images/producto2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">molde sabarin</h5>
+                                <p class="card-text">$15000</p>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="producto">
+                <div class="producto" data-aos="zoom-in">
                     <a href="">
-                        <div class="producto-img">
-                            <img class="width-max" src="./images/e4ff0cfdb36da5735c2da25e73131c42.jpg" alt="">
-                            <h3>embudo</h3>
-                            <h3>$5000</h3>
+                        <div class="card">
+                            <img src="./images/producto3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">jarra medidora</h5>
+                                <p class="card-text">desde: $5000</p>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="producto">
+                <div class="producto" data-aos="zoom-in">
                     <a href="">
-                        <div class="producto-img">
-                            <img class="width-max" src="./images/caab2a9815f63f8b21cf00f103eddd18.jpg" alt="">
-                            <h3>jarra medidora</h3>
-                            <h3>$7000</h3>
+                        <div class="card">
+                            <img src="./images/producto4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">embudos</h5>
+                                <p class="card-text">desde $2000</p>
+                            </div>
                         </div>
                     </a>
                 </div>
             </section>
-        </main>
-        <footer>
-            <div class="ubic display-d-flex">
+            <article class="ubic display-d-flex">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.010833125529!2d-64.29690042469686!3d-31.137213882810602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943281b07291aee9%3A0x2797d0fbb7cd75f5!2sPolirrubro%20Capricornio!5e0!3m2!1ses!2sar!4v1718925712043!5m2!1ses!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <i class="bi bi-geo-alt-fill">estamos en jose longuiera 168, barrio centro, salsipuedes cordoba</i>
+                <i class="bi bi-geo-alt-fill">Estamos en jose longuiera 168, barrio centro, salsipuedes cordoba</i>
+            </article>
+        </main>
+        <footer class="footer-productos display-d-flex">
+            <div class="medios-pago display-d-flex width-max-width-max">
+                <h4 class="tittle-pago">nuestros medios de pago</h4>
+                <img class="medios-pago-img" src="../images/mercadopago-banner.webp" alt="">
             </div>
-            <section id="contacto" class="contacto display-d-flex">
-                <div class="contacto-link display-d-flex">
-                    <i class="bi bi-instagram"></i>
-                    <a href="https://www.instagram.com/capricornio.ll/" target="_blank">instagram</a>
-                </div>
-                <div class="contacto-link display-d-flex">
-                    <i class="bi bi-facebook"></i>
-                    <a href="https://www.facebook.com/polirubro.capricornio?mibextid=LQQJ4d"
-                        target="_blank">facebook</a>
-                </div>
-                <div class="contacto-link display-d-flex">
-                    <i class="bi bi-tiktok"></i>
-                    <a href="https://www.tiktok.com/@polirubrocapricor?_t=8nN2BFdiW6Y&_r=1" target="_blank">tiktok</a>
-                </div>
-                <div class="contacto-link display-d-flex">
-                    <i class="bi bi-whatsapp"></i>
-                    <a href="https://api.whatsapp.com/send/?phone=5493515187443&text&type=phone_number&app_absent=0"
-                        target="_blank">whatsapp</a>
-                </div>
-            </section>
+            <div class="social-media">
+                <h4 class="tittle-social">nos mantengamos en contacto</h4>
+                <p class="text-social">Seguinos en nuestras redes sociales y enterate de todas nuestras novedades!</p>
+                <section class="contacto display-d-flex" id="contactos">
+                    <div class="contacto-link display-d-flex">
+                        <a href="https://www.instagram.com/capricornio.ll/" target="_blank">
+                            <i class="bi bi-instagram display-d-flex"></i>
+                        </a>
+                    </div>
+                    <div class="contacto-link display-d-flex">
+                        <a href="https://www.facebook.com/polirubro.capricornio?mibextid=LQQJ4d" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="contacto-link display-d-flex">
+                        <a href="https://www.tiktok.com/@polirubrocapricor?_t=8nN2BFdiW6Y&_r=1" target="_blank">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                    <div class="contacto-link display-d-flex">
+                        <a href="https://api.whatsapp.com/send/?phone=5493515187443&text&type=phone_number&app_absent=0"
+                            target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </section>
+            </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>

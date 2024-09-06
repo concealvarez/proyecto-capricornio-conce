@@ -1,25 +1,65 @@
 /*footer index*/
-footer{
+footer {
+    flex-direction: column;
     grid-area: footer;
-    background-color: $background-color;
-    height: 500px;
-    margin-top: 70px;
-    .ubic{
-        flex-wrap: wrap;
-        justify-content: space-around;
-        height: 100%;
-        i{
-            padding: 25px 0px;
+    background-color:rgb(245, 224, 224);
+    border-top:1px groove rgba(0, 0, 0, 0.212); ;
+    .medios-pago{
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(245, 224, 224);
+        .tittle-pago{
+            margin: 0px;
+            padding: 50px;
             text-align: center;
-            align-content: center;
             text-transform: uppercase;
-            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            background-color: rgb(245, 224, 224);
+        }
+        .medios-pago-img{
+            width: 500px;
+            background-color: rgb(245, 224, 224);            
         }
     }
-}
-@include contacto;
+    .social-media{
+        margin-top: 40px;
+        border-top: 1px groove rgba(0, 0, 0, 0.212);
+        .tittle-social{
+            margin: 0px;
+            padding: 40px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 24px;
+            background-color: rgb(245, 224, 224);
+        }
+        .text-social{
+            font-size: $font-size5;
+            margin: 0px;
+            padding-bottom: 40px;
+            text-align: center;
+            line-height: 2;
+            background-color: rgb(245, 224, 224);
+        }
+        .contacto {
+            justify-content: space-around;
+            background-color: rgb(245, 224, 224);
+            .contacto-link {
+                a{
+                    text-decoration: none;
+                    background-color: rgb(245, 224, 224);
+                    i {
+                        justify-content: center;
+                        align-items: center;
+                        @include width-heigth (30px, 30px);
+                        background-color: $button-color;
+                        border-radius: 50%;
+                        color: rgba(255, 255, 255, 0.842);
+                    }
+                }
+            }
+        }
 
-/*footer productos*/
-.footer-productos {
-    height: 0px
+    }   
 }

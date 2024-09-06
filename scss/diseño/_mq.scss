@@ -1,17 +1,19 @@
 /*mq index*/
 .grid-container {
     grid-template:
-        "header" 300px
+        "header" auto
         "main" auto
-        "footer" 1fr/
+        "footer" auto/
         100%;
 
     @include tablet {
-        display: grid;
-        gap: 20px;
-        grid-template:
-            "header header" repeat(2, 1fr) "main main" repeat(2, auto) "footer footer" repeat(2, 200px)/
-            1fr 1fr;
+        .grid-container {
+            display: grid;
+            gap: 20px;
+            grid-template:
+                "header header" repeat(2, 1fr) "main main" repeat(2, auto) "footer footer" repeat(2, auto)/
+                1fr 1fr;
+        }
     }
 
     @include desktop {
@@ -19,89 +21,132 @@
             display: grid;
             gap: 20px;
             grid-template:
-                "header header header" repeat(3, 1fr) "main main main" repeat(3, auto) "footer footer footer" repeat(3, 200px)/
+                "header header header" repeat(3, 1fr) "main main main" repeat(3, auto) "footer footer footer" repeat(3, auto)/
                 1fr 1fr 1fr;
         }
     }
 }
-.productos-contenedor {
-    @include tablet {
-        padding-top: 20px;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        gap: 20px 0px;
-    }
-    @include desktop {
-            padding-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            justify-items: center;
-        }
-    }
-/*productos-page*/
-.grid-container-prod {
-    display: grid;
-    grid-template:
-        "header" 300px
-        "sidebar" 50px
-        "main" 1fr
-        "footer" 150px/
-        100%;
-} 
-@include mobile{
-    .products {
-        width: 150px;
-    }
-    .contenedor-product h3 {
-        font-size: $font-size4;
-    }
-}
-@include mobile-2{
-    .products {
-        width: 160px;
-    }
-    .contenedor-product h3 {
-        font-size: $font-size6;
-    }
-}
-
-@include tablet {
-    .conteiner-grid {
-        gap: 50px, 0px;
-    }
-    .products {
-        width: 180px;
-    }
-    .contenedor-product h3 {
-        font-size: $font-size5;
+@include desktop{
+    .ofertas{
+        margin-top: 100px;
     }
 }
 
 @include desktop {
-    .grid-container-prod {
-        display: grid;
-        grid-template:
-            "header header header" 1fr
-            "sidebar main main" auto
-            "sidebar main main" auto
-            "footer footer footer" 200px/
-            20%     40%   40%;
-    }
-    .content{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
+    .productos-contenedor {
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 100px;
     }
 }
+
+@include desktop-xl {
+    .productos-contenedor {
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+}
+
+/*productos-page*/
+.container-product-body {
+    grid-template:
+        "header" auto
+        "sidebar" auto
+        "main" auto
+        "footer" 1fr/
+        100%;
+}
+
+@include tablet {
+    .container-product-body {
+        display: grid;
+        gap: 20px;
+        grid-template:
+            "header header" repeat(2, auto) "sidebar sidebar" repeat(2, auto) "main main" repeat(2, auto) "footer footer" repeat(2, 200px)/
+            1fr 1fr;
+
+        .conteiner-grid-product {
+            padding: 10px 50px 20px 50px;
+            gap: 40px;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+
+@include desktop {
+    .container-product-body {
+        display: grid;
+        gap: 20px;
+        grid-template:
+            "header header header" 1fr
+            "sidebar sidebar sidebar" auto
+            "main main main" auto
+            "footer footer footer" auto/
+            1fr 1fr 1fr;
+
+        .conteiner-grid-product {
+            gap: 150px;
+            grid-template-rows: repeat(3, 300px);
+            grid-template-columns: repeat(2, 250px);
+        }
+
+    }
+
+    .ubic {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@include desktop {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        width: 100%;
+
+        .medios-pago {
+            width: 50%;
+            border-right: 1px groove gray;
+        }
+
+        .social-media {
+            width: 50%;
+            margin: 20px;
+            border-top: none;
+        }
+    }
+}
+
+@include desktop-xl {
+    .container-product-body {
+        grid-template:
+            "header header header header" 1fr
+            "sidebar sidebar sidebar sidebar" auto
+            "main main main main" auto
+            "footer footer footer footer" auto/
+            1fr 1fr 1fr 1fr;
+
+        .conteiner-grid-product {
+            gap: 100px;
+            grid-template-rows: repeat(3, 400px);
+            grid-template-columns: repeat(4, 250px);
+        }
+    }
+}
+
 /*ofertas-page*/
-.grid-container-oferta{
-    grid-template: 
-    "header" 300px
-    "sidebar"80px
-    "main"1fr
-    "footer"50px/
-     100%;
+.grid-container-oferta {
+    grid-template:
+        "header" 300px
+        "sidebar" 80px
+        "main" 1fr
+        "footer" 50px/
+        100%;
 }

@@ -1,25 +1,51 @@
 //sidebar prod
 .sidebar {
     grid-area: sidebar;
+    padding-top: 20px;
 }
-.navbar {
-    display: flex;
+.filter-container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 20px;
     .filtro-button {
-        @include width-heigth (80px, 35px);
-        border-style: none;
-        h5 {
-            font-family: "Slabo 27px", serif;
-            font-size: 16px;
-            color: #000000;
+            @include width-heigth (200px, 40px);
+            border: 2px groove #808080;
+            border-radius: 10px;
+        .title-filtro{
+            padding: 0px 5px;
+            justify-content: space-between;
+            h5 {
+                margin: 0px;
+                font-family: "Slabo 27px", serif;
+                font-size: $font-size5;
+                color: #000000;
+            }
         }
     }
     .offcanvas {
-        .form-check-input:checked {
-            background-color: $button-color;
-            border-color: $button-color;
+        background-color: $background-color;
+        .filter{
+            padding: 20px;
+            .form-check-input:checked {
+                background-color: $button-color;
+                border-color: $button-color;
+            }
+        }
+        .range-container{
+            padding: 50px 20px 50px 0px;
+            justify-content: space-around;
+            .form-range{
+                width: 220px;
+            }
         }
     }
 }
+.orden{
+    position: relative;
+    .dropdown-menu{
+        position: absolute;
+        z-index: 1;
+    }
+}
+
 /*sidebar ofertas*/
