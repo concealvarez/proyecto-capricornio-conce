@@ -57,13 +57,17 @@ header .navbar .collapse .navbar-nav .nav-link {
   text-align: center;
   justify-content: space-around;
 }
-header .navbar .collapse form {
+header .navbar .collapse .container-nav {
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .navbar .collapse .container-nav form {
   height: 30px;
   justify-content: end;
   margin-bottom: 40px;
   margin-right: 20px;
 }
-header .navbar .collapse form .btn {
+header .navbar .collapse .container-nav form .btn {
   background-color: rgba(239, 31, 31, 0.8666666667);
   color: #ffffff;
   border-color: rgba(239, 31, 31, 0.4470588235);
@@ -74,11 +78,26 @@ header .navbar .collapse form .btn {
   width: 60px;
   height: 30px;
 }
-header .navbar .collapse form input {
+header .navbar .collapse .container-nav form input {
   font-size: 13px;
   text-align: center;
   border-radius: 10px;
   border-color: rgba(255, 255, 255, 0.4509803922);
+}
+header .navbar .collapse .container-nav .carrito {
+  border: none;
+  align-items: start;
+}
+header .navbar .collapse .container-nav .carrito .link-carrito {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+header .navbar .collapse .container-nav .carrito .link-carrito .bi-cart {
+  width: 50%;
 }
 header .navbar .breadcrumb-container {
   flex-direction: column;
@@ -365,9 +384,6 @@ footer .social-media .text-social {
 footer .social-media .contacto {
   justify-content: space-around;
   background-color: rgb(245, 224, 224);
-}
-footer .social-media .contacto .contacto-link {
-  display: flex;
 }
 footer .social-media .contacto .contacto-link a {
   text-decoration: none;

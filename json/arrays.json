@@ -1,0 +1,474 @@
+{
+    "novedades": [
+        {
+            "id": 1,
+            "nombre": "Sabarin de 20 cm",
+            "precio": 5000,
+            "descripcion": "sabarin-20cm",
+            "imagen": "./images/producto2.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Molde para cupcacke x12",
+            "precio": 8000,
+            "descripcion": "molde-cupcackex12",
+            "imagen": "./images/producto1.jpg"
+        },
+        {
+            "id":3,
+            "nombre": "Jarra medidora",
+            "precio": 5000,
+            "descripcion": "jarra-medidora",
+            "imagen": "./images/producto3.jpg"
+        },
+        {
+            "id":4,
+            "nombre": "Embudos",
+            "precio": 2000,
+            "descripcion": "embudos",
+            "imagen": "./images/producto4.jpg"
+        }
+    ],
+
+    "categorias": [
+        "chocolates",
+        "cremas",
+        "polvos",
+        "frutas",
+        "dulces",
+        "utensillos",
+        "festividades"
+    ],
+    "chocolates": [
+        {
+            "nombre": "chocolate aguila semiamargo",
+            "precio": 4000,
+            "codigo": 2
+        },
+        {
+            "nombre": "chocolate aguila con leche",
+            "precio": 3000,
+            "codigo": 3
+        },
+        {
+            "nombre": "chocolate aguila blanco",
+            "precio": 4000,
+            "codigo": 4
+        },
+        {
+            "nombre": "chocolate alpino semiamrgo",
+            "precio": 5000,
+            "codigo": 5
+        },
+        {
+            "nombre": "chocolate alpino con leche",
+            "precio": 4000,
+            "codigo": 6
+        },
+        {
+            "nombre": "chocolate alpino blanco",
+            "precio": 5000,
+            "codigo": 7
+        },
+        {
+            "nombre": "chocolate aguila celeste pocuh 150gr",
+            "precio": 1500,
+            "codigo": 8
+        },
+        {
+            "nombre": "chocolate aguila rosa pouch 150gr",
+            "precio": 1500,
+            "codigo": 9
+        }
+    ],
+    "cremas": [
+        {
+            "nombre": "crema vegetal ledevit x 500ml",
+            "precio": 4000,
+            "codigo": 10
+        },
+        {
+            "nombre": "crema vegetal ledevit chantilly x 500ml",
+            "precio": 5000,
+            "codigo": 11
+        },
+        {
+            "nombre": "crema vegetal ledevit chocolate x 500ml",
+            "precio": 6000,
+            "codigo": 12
+        },
+        {
+            "nombre": "crema vegetal ledevit vainilla x 500ml",
+            "precio": 5000,
+            "codigo": 13
+        },
+        {
+            "nombre": "crema vegetal ledevit x 1lt",
+            "precio": 7000,
+            "codigo": 14
+        },
+        {
+            "nombre": "crema vegetal ledevit chantilly x 1lt",
+            "precio": 8000,
+            "codigo": 15
+        },
+        {
+            "nombre": "crema vegetal ledevit chocolate x 1lt",
+            "precio": 9000,
+            "codigo": 16
+        },
+        {
+            "nombre": "crema vegetal ledevit vainilla x 1lt",
+            "precio": 8000,
+            "codigo": 17
+        },
+        {
+            "nombre": "crema chantilly ledevit  en polvo x 250gr",
+            "precio": 5000,
+            "codigo": 18
+        },
+        {
+            "nombre": "mousse de chocolate ledevit en polvo x 250gr",
+            "precio": 5000,
+            "codigo": 19
+        },
+        {
+            "nombre": "merengue ledevit en polvo x 250gr",
+            "precio": 5000,
+            "codigo": 20
+        },
+        {
+            "nombre": "pastelera ledevit en polvo x 250gr",
+            "precio": 5000,
+            "codigo": 21
+        },
+        {
+            "nombre": "crema de leche Ramolac x 1lt",
+            "precio": 8000,
+            "codigo": 22
+        }
+    ],
+    "polvos": [
+        {
+            "nombre": "bicarbonato de sodio",
+            "precio": 1000,
+            "codigo": 23
+        },
+        {
+            "nombre": "polvo de hornear",
+            "precio": 2000,
+            "codigo": 24
+        },
+        {
+            "nombre": "cremor tartaro",
+            "precio": 5000,
+            "codigo": 25
+        },
+        {
+            "nombre": "goma xantica",
+            "precio": 10000,
+            "codigo": 26
+        },
+        {
+            "nombre": "cacao amargo",
+            "precio": 10000,
+            "codigo": 27
+        },
+        {
+            "nombre": "cacao dulce",
+            "precio": 8000,
+            "codigo": 28
+        },
+        {
+            "nombre": "azucar impalpable",
+            "precio": 5000,
+            "codigo": 29
+        },
+        {
+            "nombre": "azucar comun",
+            "precio": 3000,
+            "codigo": 30
+        },
+        {
+            "nombre": "fecula de maiz",
+            "precio": 3000,
+            "codigo": 30
+        },
+        {
+            "nombre": "mousse de chocolate",
+            "precio": 3000,
+            "codigo": 30
+        },
+        {
+            "nombre": "mousse de vanilla",
+            "precio": 3000,
+            "codigo": 30
+        },
+        {
+            "nombre": "mousse de frutilla",
+            "precio": 3000,
+            "codigo": 30
+        },
+        {
+            "nombre": "mousse de dulce de leche",
+            "precio": 3000,
+            "codigo": 30
+        },
+        {
+            "nombre": "mousse de limon",
+            "precio": 3000,
+            "codigo": 30
+        },
+        {
+            "nombre": "mousse de chocolate ledevit en polvo x 250gr",
+            "precio": 5000,
+            "codigo": 19
+        },
+        {
+            "nombre": "crema chantilly ledevit  en polvo x 250gr",
+            "precio": 5000,
+            "codigo": 18
+        },
+        {
+            "nombre": "merengue ledevit en polvo x 250gr",
+            "precio": 5000,
+            "codigo": 20
+        },
+        {
+            "nombre": "pastelera ledevit en polvo x 250gr",
+            "precio": 5000,
+            "codigo": 21
+        }
+    ],
+    "frutas": [
+        {
+            "nombre": "pulpa de frutilla",
+            "precio": 3000,
+            "codigo": 35
+        },
+        {
+            "nombre": "pulpa de durazno",
+            "precio": 5000,
+            "codigo": 36
+        },
+        {
+            "nombre": "pulpa de frutos rojos",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "mani tostado sin sal",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "mani tostado con sal",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "almendra",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "nuez",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "castaña de caju",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "pasas de uva rubias",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "pasas de uva",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "mix tropical",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "mix con pasas de uva",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "mix sin pasas de uva",
+            "precio": 7000,
+            "codigo": 37
+        },
+        {
+            "nombre": "mix cervecero",
+            "precio": 7000,
+            "codigo": 37
+        }
+    ],
+    "dulces": [
+        {
+            "nombre": "dulce de leche Chakra x 10kg",
+            "precio": 15000,
+            "codigo": 23
+        },
+        {
+            "nombre": "dulce de leche Tomasita x 10kg",
+            "precio": 18000,
+            "codigo": 24
+        },
+        {
+            "nombre": "dulce de leche Rosquinense x 10kg",
+            "precio": 23000,
+            "codigo": 25
+        },
+        {
+            "nombre": "dulce de leche Vacalin x 10kg",
+            "precio": 30000,
+            "codigo": 26
+        },
+        {
+            "nombre": "dulce de leche San Ignacio x 10kg",
+            "precio": 31000,
+            "codigo": 27
+        },
+        {
+            "nombre": "dulce de leche Chakra x 3kg",
+            "precio": 7000,
+            "codigo": 28
+        },
+        {
+            "nombre": "dulce de leche Tomasita x 3kg",
+            "precio": 9000,
+            "codigo": 29
+        },
+        {
+            "nombre": "dulce de leche Rosquinense x 3kg",
+            "precio": 11000,
+            "codigo": 30
+        },
+        {
+            "nombre": "dulce de leche Vacalin x 3kg",
+            "precio": 13000,
+            "codigo": 31
+        },
+        {
+            "nombre": "dulce de leche San Ignacio x 3kg",
+            "precio": 13000,
+            "codigo": 32
+        },
+        {
+            "nombre": "dulce de leche ramolac x480gr",
+            "precio": 3000,
+            "codigo": 33
+        },
+        {
+            "nombre": "dulce de leche vacalin x 480gr",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "dulce de membrillo",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "dulce de batata",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "dulce de durazno",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "dulce de damasco",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "dulce de naranja",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "dulce de frutilla",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "dulce de ciruela",
+            "precio": 4000,
+            "codigo": 34
+        }
+    ],
+    "utensillos": [
+        {
+            "nombre": "molde de torta redondo",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "molde de torta cuadrado",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "molde de torta rectangular",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "molde de torta corazon",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "molde de torta estrella",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "molde para muffins",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "molde sabarin",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "placa de silicona",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "batidor globo",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "paleta de silicona",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "vaso medidor",
+            "precio": 4000,
+            "codigo": 34
+        },
+        {
+            "nombre": "pincel de silicona",
+            "precio": 4000,
+            "codigo": 34
+        }
+    ]
+}

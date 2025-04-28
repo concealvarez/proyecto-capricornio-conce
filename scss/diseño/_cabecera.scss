@@ -23,26 +23,41 @@ header {
                     justify-content: space-around
                 }
             }
-            form {
-                height: 30px;
-                justify-content: end;
-                margin-bottom: 40px;
-                margin-right: 20px;
-                .btn {
-                    background-color: $button-color;
-                    color: $text-color;
-                    border-color: $border-button-color;
-                    border-radius: 10px;
-                    font-size: $font-size1;
-                    text-transform: capitalize;
-                    align-content: center;
-                    @include width-heigth(60px, 30px)
+            .container-nav{
+                flex-direction: row;
+                justify-content: space-between;
+                form {
+                    height: 30px;
+                    justify-content: end;
+                    margin-bottom: 40px;
+                    margin-right: 20px;
+                    .btn {
+                        background-color: $button-color;
+                        color: $text-color;
+                        border-color: $border-button-color;
+                        border-radius: 10px;
+                        font-size: $font-size1;
+                        text-transform: capitalize;
+                        align-content: center;
+                        @include width-heigth(60px, 30px)
+                    }
+                    input {
+                        font-size: $font-size2;
+                        text-align: center;
+                        border-radius: 10px;
+                        border-color: $buscador-color;
+                    }
                 }
-                input {
-                    font-size: $font-size2;
-                    text-align: center;
-                    border-radius: 10px;
-                    border-color: $buscador-color;
+                .carrito{
+                    border: none;
+                    align-items: start;
+                    .link-carrito{
+                        @include ancla-diseño;
+                        @include width-heigth(50px, 50px);
+                        .bi-cart{
+                            width: 50%;
+                        }
+                    }
                 }
             }
         }
